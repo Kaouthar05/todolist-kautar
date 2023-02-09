@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Maven+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body
+{
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  background: #000000;
+}
+.container 
+{
+  font-size:30px;
+  /* background: linear-gradient(to bottom  right,  #7c607f,#4d7d97 ,#e5e5dc );  */
+   background-image: linear-gradient(180deg, rgb(106,42,27)   , rgb(106,42,27) , transparent calc(10% + 2px)),linear-gradient(90deg, transparent 0%, transparent 12%, rgb(245,196,146) 12%, rgb(245,196,146) calc(12% + 2px), transparent calc(12% + 2px), transparent calc(12% + 6px), rgb(245,196,146) calc(12% + 6px), rgb(245,196,146) calc(12% + 8px), transparent calc(12% + 8px), transparent 100%), linear-gradient(180deg, rgb(251,238,159) 22%, transparent 22%), repeating-linear-gradient(180deg, rgb(201,215,152) 0px, rgb(201,215,152) 2px, transparent 2px, transparent 36px), linear-gradient(rgb(251,238,159),rgb(251,238,159));
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  flex-direction: column;  
+  border-radius: 20px;
+  box-shadow: 1px 1px 44px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 1px 44px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 44px -7px rgba(0,0,0,0.75);
+  height: 500px;
+  width: 500px;  
+  animation : container 2s  ;  
+  /* overflow: auto; */
+  height: auto;
+  min-height:500px;
+}
+header
+{
+  font-family: 'EB Garamond', serif; 
+}
+/* @keyframes container { 
+  0%
+  {
+    transform:translateY(-500px);
+  } 
+  100%
+  {
+    transform:translateY(0); 
+  } 
+} */ 
+#list 
+{
+  list-style-type: none;
+  padding: 0;
+}
+.div1
+{
+  background-color: rgb(106,42,27);
+  font-size: larger; 
+  margin-top: 20px;
+  text-shadow: 2px 2px  black;
+  margin-bottom: 10px;
+} 
+.form-control
+{
+  margin:6px;
+  margin-left: 38px;
+  width: 300px; 
+  height: 50px; 
+  border-radius: 10px;
+  font-family: 'Maven Pro', sans-serif;
+}
+input
+{
+  outline: none;
+  border: transparent;
+  text-transform: capitalize; 
+}
+button
+{
+  color:   #ccc ;  
+  background-color: rgb(106,42,27);
+  border-radius: 10px;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  width: 66px;
+  font-family: 'Maven Pro', sans-serif;
+} 
+.sortbutton
+{
+  width: 200px;
+  background-color: rgb(106,42,27);
+  margin-top: 20px;
+  margin-bottom : 20px;
+}
+.sortbutton:hover 
+{
+  background-color: rgb(85, 33, 22);
+}
+aside
+{
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 17px; 
+  color: #000000;
+} 
+button:hover
+{
+  background-color:   rgb(85, 33, 22)2d292f ;  
+  color: #ccc; 
+  border-radius: 10px;
+}
+i:hover 
+{
+  cursor: pointer;
+  color: rgb(104, 96, 96);
+  
+}
+ul
+{
+  width: 350px;
+  font-size: 20px;
+  font-family: 'Kalam', cursive;
+  clear: both; 
+  color: black;
+}
+li{ 
+  margin-top: 5px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.trash-icon 
+{
+  cursor: pointer;
+  position: absolute;right: 15px; 
+}
+.checkmark 
+{
+  cursor: pointer;
+  margin-left: 10px;
+  position: absolute;right: 50px; 
+}
+.completed 
+{
+  text-decoration: line-through;
+  color: #737171;
+}
+.fade-out
+{
+  animation: fadeOut 0.5s ;
+}
+
+@keyframes fadeOut 
+{
+  from 
+  {
+    opacity: 1;
+  }
+  to 
+  {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
